@@ -1,0 +1,40 @@
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.nav {
+  width: 100vh;
+  display: block;
+  height: 7vh;
+  margin: 0 auto;
+  min-height: 60px;
+  width: 95%;
+  background-color: black;
+}
+
+.gallery {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.galleryItem {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+}
