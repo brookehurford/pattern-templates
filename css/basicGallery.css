@@ -35,6 +35,8 @@
 
 img {
   max-width: 100vh;
+  max-height: 30vh;
+  min-height: 200px;
   padding-top: 3vh;
   display: block;
   margin-left: auto;
@@ -43,30 +45,32 @@ img {
 
 
 @media only screen and (min-width: 1024px) {
-body {
-  background-color: cyan;
+
+  img {
+  float: left;
+  /*width: 33vh;*/
+  /*margin: 1vh;*/
+  display: block;
+  padding-top: 0px;
+  text-align:center;
+  width: 49%;
+  margin: 4.25px;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+  }
 }
 
-img {
-float: left;
-/*width: 33vh;*/
-/*margin: 1vh;*/
-display: block;
-padding-top: 0px;
-text-align:center;
-width: 49%;
-margin: 4.25px;
-}
+@media only screen and (min-width: 1366px) {
 
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  overflow: auto;
-}
+  .wrapper {
+    padding-left: 1.5%;
+  }
 
-
-
-
-
-
+  img {
+    width: 32%;
+  }
 }
