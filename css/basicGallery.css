@@ -1,3 +1,4 @@
+/* For testing only */
 
 *:not(body):not(html) {
   box-sizing:border-box;
@@ -7,6 +8,8 @@
 .columns {
   min-height: 100px;
 }
+
+/* End for testing */
 
 *,
 *::before,

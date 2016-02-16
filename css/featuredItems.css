@@ -1,0 +1,53 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+/* End for testing */
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+h1, h2 {
+  background-color: cyan;
+  width: 80%;
+  float: left;
+}
+
+li {
+  list-style-type: none;
+  float: left;
+  padding-right: 50px;
+}
+
+ul {
+   float: right;
+   padding-left: 0px;
+}
+
+h1.sub {
+  width: 70%;
+}
+
+.header {
+  overflow: auto;
+}
+
+.logo {
+  margin-left: 2%;
+  padding-right: 0px;
+  width: 20%;
+}
+
+.headerText {
+  margin-left: 10%;
+  overflow: auto;
+  clear: both;
+}
