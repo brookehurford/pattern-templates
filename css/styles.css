@@ -1,6 +1,6 @@
 /* For testing only */
 
-*:not(body):not(html):not(.wrapper) {
+*:not(body):not(html):not(.wrapper):not(.subContent)  {
   box-sizing:border-box;
   border:1px dashed #000;
 }
@@ -11,6 +11,14 @@
 
 /* End for testing */
 
+/*html {
+  height: 100%;
+}*/
+
+body {
+  margin: 0px;
+}
+
 *,
 *::before,
 *::after {
@@ -20,22 +28,82 @@
 }
 
 .wrapper {
-  width: 92%;
+  width: 95%;
   margin: 0 auto;
+  overflow: auto;
 }
 
 .mainContent {
-  height: 300px;
+  overflow: auto;
+  height: 50vh;
+  display: block;
 }
 
-.subContent1 {
-  height: 150px;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.subContent {
+  border: 1px solid green;
 }
 
-.subContent2 {
+.subContent1, .subContent2{
   height: 150px;
   width: 100%;
+  margin-top: 18px;
+  overflow: auto;
+}
+
+/* MEDIA QUERIES
+======================*/
+
+@media only screen and (min-width: 768px) {
+
+  .subContent {
+    height: 50vh;
+  }
+
+  .subContent1 {
+    float: left;
+    width: 49%;
+    height: 90%;
+  }
+
+  .subContent2{
+    float: right;
+    width: 49%;
+    height: 90%;
+  }
+}
+
+
+@media only screen and (min-width: 1366px) {
+
+  .wrapper {
+    /*border: 1px solid green;*/
+  }
+
+  .mainContent {
+    float: left;
+    width: 60%;
+    height: 100vh;
+    display: block;
+  }
+
+  .subContent1 {
+    background-color: red;
+    margin-top: 0;
+    width: 100%;
+    height: 49%;
+  }
+
+  .subContent2 {
+    background-color: cyan;
+    width: 100%;
+    height: 49%;
+  }
+
+  .subContent {
+    float: right;
+    width: 40%;
+    padding: 0 0 0 15px;
+    height: 100vh;
+      }
+
 }
