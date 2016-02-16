@@ -1,9 +1,9 @@
-/* For testing only */
-/*
+ /*For testing only */
+
 *:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
-}*/
+}
 
 /* End for testing */
 
@@ -18,7 +18,6 @@
 .container {
   width: 95%;
   margin: 0 auto;
-  border: 1px solid red;
   overflow: auto;
 }
 
@@ -52,8 +51,6 @@ li {
 
 .logoBig {
   border-radius: 100%;
-  /*margin-left: auto;
-  margin-right: auto;*/
   margin: 5px auto 20px auto;
   display: block;
 }
@@ -181,5 +178,12 @@ h3 {
     margin: 10px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1420px), (max-width: 1470px) {
+
+  .smallText {
+    max-width: 80%;
   }
 }
