@@ -1,0 +1,119 @@
+/*For testing only */
+
+*:not(body):not(html) {
+ box-sizing:border-box;
+ border:1px dashed #000;
+}
+
+/* End for testing */
+
+*,
+*::before,
+*::after {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1 {
+  background-color: #B0BEC5;
+  padding: 10px;
+  max-width: 85%;
+}
+
+h2 {
+  background-color: #B0BEC5;
+  padding: 30px;
+}
+
+h3 {
+  margin-bottom: -10px;
+}
+
+img {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+  img {
+    display:inline;
+    max-width: 15vh;
+  }
+
+  .imageLeft {
+    clear:both;
+    overflow: auto;
+  }
+
+  .imageLeft img {
+    float: left;
+  }
+
+  .imageLeft div {
+    float: right;
+    max-width: 70%;
+  }
+
+  .imageRight img {
+    float: right;
+  }
+
+  .imageRight div {
+    float: left;
+    max-width: 70%;
+ }
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .mainContent {
+    padding-left: 5%;
+    overflow: auto;
+  }
+
+  .imageLeft, .imageRight {
+    float: left;
+    width: 30%;
+    margin: 1%;
+  }
+
+  .imageLeft {
+    clear:none;
+  }
+
+  .imageLeft img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imageLeft div {
+    float: none;
+    max-width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imageRight img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imageRight div {
+    float: none;
+    max-width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
