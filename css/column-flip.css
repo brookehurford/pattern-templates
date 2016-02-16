@@ -1,9 +1,9 @@
 /* For testing only */
-
+/*
 *:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
-}
+}*/
 
 /* End for testing */
 
@@ -67,4 +67,90 @@ h3 {
 .subImg {
   max-width: 100%;
   margin: 15px 0;
+}
+
+.item {
+  overflow: auto;
+}
+
+.smallSquare {
+  float: left;
+  max-width: 50px;
+}
+
+.smallText {
+  float: left;
+  max-width: 80%;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .logoBig {
+    float: right;
+  }
+
+  .mainContent {
+    padding-top: 10px;
+    clear: both;
+  }
+
+  nav {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    margin-top: 13px;
+  }
+
+  .mainText {
+    float: left;
+    max-width: 65%;
+    margin-top: 7vh;
+  }
+
+  .imgColumn {
+    clear: both;
+  }
+
+  .subImg {
+    max-width: 32%;
+    margin-left: 7px;
+  }
+
+  .textColumn{
+    float:left;
+    max-width: 49%;
+    /*margin: 7px;*/
+  }
+
+  .imgTextColumn{
+    float: right;
+    max-width: 49%;
+  }
+  .smallText p:first-child, .textColumn p:nth-child(odd) {
+    margin-bottom: -20px;
+  }
+
+  .smallSquare {
+    margin-top: 22px;
+  }
+}
+
+@media only screen and (min-width: 1396px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
