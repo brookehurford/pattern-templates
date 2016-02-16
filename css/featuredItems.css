@@ -85,13 +85,17 @@ img {
 }
 
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 925px) {
 
   h1, h2 {
     background-color: cyan;
-    width: 80%;
   }
 
+.featured {
+  width: 22%;
+}
+
+/*
   li {
     float: left;
     padding-right: 50px;
@@ -115,6 +119,6 @@ img {
 
   ul {
      float: right;
-  }
+  }*/
 
 }
