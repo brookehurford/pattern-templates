@@ -26,15 +26,26 @@ li {
   padding-right: 30px;
 }
 
+.logo {
+  width: 20vh;
+  text-align: center;
+}
+
+h1.sub {
+  width: 95%;
+}
+
 .header {
-  /*border: 2px solid green;*/
   overflow: auto;
 }
 
-/*.headerText {
-  border: 2px solid red;
+img {
+  width: 100%;
+}
 
-}*/
+.featured {
+  margin-bottom: 45px;
+}
 
 
 @media only screen and (min-width: 1366px) {
@@ -47,10 +58,6 @@ li {
   li {
     float: left;
     padding-right: 50px;
-  }
-
-  h1.sub {
-    width: 70%;
   }
 
   .header {
